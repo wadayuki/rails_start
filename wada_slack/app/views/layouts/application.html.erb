@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WadaSlack</title>
+    <%= csrf_meta_tags %>
+      <%= image_tag 'aosora' if params[:test] == 'aosora' %>
+   <%= stylesheet_link_tag 'edit' if params[:test] == 'edit' %>
+    <%= javascript_include_tag "main" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
